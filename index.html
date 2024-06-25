@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Phishing Hook: Don't Get Caught!</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+        }
+        .sidebar {
+            width: 80px;
+            background: #006400;
+            color: #fff;
+            position: fixed;
+            height: 100%;
+            padding: 20px 10px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .sidebar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-size: 12px;
+        }
+        .sidebar a:hover {
+            background: #004d00;
+        }
+        .sidebar i {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        .container {
+            margin-left: 100px;
+            padding: 20px;
+            width: calc(100% - 100px);
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            color: #006400;
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            margin: 10px 0;
+            position: relative;
+            padding-left: 25px;
+            transition: color 0.3s;
+        }
+        li::before {
+            content: "\2022";
+            color: #006400;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+        li:hover {
+            color: #006400;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #006400;
+            color: #fff;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        footer:hover {
+            background: #004d00;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .section:hover {
+            background: #e6f7ff;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <a href="#phishing"><i class="fas fa-fish"></i>Phishing</a>
+        <a href="#types"><i class="fas fa-th-list"></i>Types</a>
+        <a href="#spotting"><i class="fas fa-eye"></i>Spotting</a>
+        <a href="#protection"><i class="fas fa-shield-alt"></i>Protection</a>
+        <a href="#conclusion"><i class="fas fa-check"></i>Conclusion</a>
+    </div>
+
+    <div class="container">
+        <h1>The Phishing Hook: Don't Get Caught!</h1>
+        <div id="phishing" class="section">
+            <h2>What is Phishing?</h2>
+            <p>Phishing is a form of social engineering where attackers pretend to be trustworthy entities to steal sensitive data such as login details, credit card numbers, and personal information. These attacks are typically executed via email, text messages, social media, or other communication platforms. By posing as reputable organizations or individuals, scammers exploit human psychology to elicit responses that can compromise security.</p>
+        </div>
+
+        <div id="types" class="section phishing-types">
+            <h2>Types of Phishing</h2>
+            <p>Phishing isn't a one-size-fits-all threat; it comes in various forms, each tailored to exploit specific vulnerabilities:</p>
+            <ul>
+                <li><strong>Deceptive Phishing:</strong> This is the most common type, where fraudulent emails or messages appear to come from legitimate sources. The goal is to trick recipients into revealing personal information or clicking on malicious links.</li>
+                <li><strong>Spear Phishing:</strong> Unlike general phishing attacks, spear phishing targets specific individuals or organizations. The attackers often conduct prior research to craft personalized messages, making them more convincing and harder to detect.</li>
+                <li><strong>Whaling:</strong> This is a type of spear phishing aimed at high-profile targets such as CEOs, CFOs, or other senior executives. Whaling attacks often involve sophisticated tactics and significant financial or reputational damage if successful.</li>
+                <li><strong>Pharming:</strong> Rather than tricking users into clicking a link, pharming redirects victims to a fake website even if they type the correct URL into their browser. These fraudulent sites are designed to look identical to legitimate ones, deceiving users into entering their credentials or personal information.</li>
+            </ul>
+        </div>
+
+        <div id="spotting" class="section spotting-phishing">
+            <h2>How to Spot a Phishing Attempt</h2>
+            <p>Phishing emails and messages often contain subtle clues that can help you identify them before it's too late. Here are some key indicators to watch out for:</p>
+            <ul>
+                <li><strong>Suspicious Sender Addresses:</strong> Check the sender's email address carefully. Phishers often use addresses that resemble legitimate ones but may contain slight misspellings or unusual domains.</li>
+                <li><strong>Generic Greetings:</strong> Be wary of emails that use generic greetings like "Dear Customer" instead of your name. Legitimate organizations typically use personalized salutations.</li>
+                <li><strong>Urgent or Threatening Language:</strong> Phishers frequently create a sense of urgency or panic to prompt immediate action. Phrases like "Your account will be suspended" or "Immediate action required" are red flags.</li>
+                <li><strong>Hover Over Links:</strong> Before clicking on any link, hover your mouse over it to see the actual URL. If it looks suspicious or doesn't match the purported destination, don't click.</li>
+                <li><strong>Unexpected Attachments:</strong> Be cautious of attachments, especially from unknown senders. These can contain malware designed to infect your system.</li>
+            </ul>
+        </div>
+
+        <div id="protection" class="section protection-strategies">
+            <h2>Protection Strategies</h2>
+            <p>While recognizing phishing attempts is crucial, taking proactive measures can provide an additional layer of security. Here are some strategies to protect yourself from falling victim to phishing scams:</p>
+            <ul>
+                <li><strong>Verify Requests:</strong> If you receive an email or message asking for sensitive information, verify its authenticity by contacting the organization directly using a known and trusted contact method.</li>
+                <li><strong>Strong Passwords and Two-Factor Authentication (2FA):</strong> Use strong, unique passwords for each of your accounts and enable 2FA wherever possible. This adds an extra layer of security by requiring a second form of verification.</li>
+                <li><strong>Update Software Regularly:</strong> Keeping your operating systems and software up-to-date ensures you have the latest security patches to protect against known vulnerabilities.</li>
+                <li><strong>Anti-Phishing Tools:</strong> Utilize anti-phishing tools and browser extensions that can help identify and block phishing sites and emails.</li>
+            </ul>
+        </div>
+
+        <div id="conclusion" class="section">
+            <h2>Conclusion</h2>
+            <p>Phishing attacks are a growing threat in our digital world. However, by understanding the tactics used by phishers and adopting protection strategies, you can significantly reduce the risk of falling victim to these scams. Stay vigilant, educate yourself and others, and always think twice before sharing sensitive information online. Don't let the phishers reel you in!</p>
+        </div>
+    </div>
+
+</body>
+</html>
